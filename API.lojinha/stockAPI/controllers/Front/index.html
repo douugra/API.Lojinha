@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock API Frontend</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Stock API - Frontend</h1>
+    <h2>Criar Produto</h2>
+    <input type="text" id="name" placeholder="Nome">
+    <input type="number" id="cost" placeholder="Custo">
+    <input type="number" id="price" placeholder="Preço">
+    <button onclick="createProduct()">Criar Produto</button>
+
+    <h2>Consultar Produtos</h2>
+    <button onclick="getProducts()">Listar Produtos</button>
+
+    <h2>Detalhes do Produto</h2>
+    <input type="number" id="productId" placeholder="ID">
+    <button onclick="getProductDetails()">Consultar Produto</button>
+
+    <h2>Atualizar Produto</h2>
+    <input type="number" id="updateId" placeholder="ID">
+    <input type="text" id="updateName" placeholder="Novo Nome">
+    <input type="number" id="updateCost" placeholder="Novo Custo">
+    <input type="number" id="updatePrice" placeholder="Novo Preço">
+    <button onclick="updateProduct()">Atualizar Produto</button>
+
+    <h2>Deletar Produto</h2>
+    <input type="number" id="deleteId" placeholder="ID">
+    <button onclick="deleteProduct()">Deletar Produto</button>
+
+    <div id="result"></div>
+</body>
+</html>
